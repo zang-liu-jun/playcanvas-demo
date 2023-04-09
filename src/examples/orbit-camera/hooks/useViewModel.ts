@@ -77,6 +77,10 @@ export default function useViewModel(canvasRef: React.MutableRefObject<HTMLCanva
             modelEntity.addComponent('rigidbody', {
                 type: 'static',
             });
+
+            const r=modelEntity.getRotation()
+            r.z+=-40.5*pc.math.DEG_TO_RAD
+            modelEntity.setRotation(r)
             const meshInstances = modelEntity.model?.meshInstances;
             meshInstances?.forEach((instance, index) => {
                 if (index === 0) {

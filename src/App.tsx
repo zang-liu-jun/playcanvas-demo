@@ -6,8 +6,7 @@ function App() {
 
   return (
     <div className="App">
-      1
-      {/* <OrbitCamera></OrbitCamera> */}
+      <OrbitCamera></OrbitCamera>
     </div>
   )
 }
